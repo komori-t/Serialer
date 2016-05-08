@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39D0251B19E6658F00677303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0251A19E6658F00677303 /* main.m */; };
+		39D0251E19E6658F00677303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D0251D19E6658F00677303 /* AppDelegate.m */; };
+		39D0252019E6658F00677303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D0251F19E6658F00677303 /* Images.xcassets */; };
+		39D0252319E6659000677303 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D0252119E6658F00677303 /* MainMenu.xib */; };
+		39D0253919E67B7900677303 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D0253819E67B7900677303 /* IOKit.framework */; };
+		E17AA2631A6BBA6F007BA320 /* Serial.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AA2621A6BBA6F007BA320 /* Serial.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39D0251519E6658F00677303 /* Serialer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serialer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D0251919E6658F00677303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D0251A19E6658F00677303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39D0251C19E6658F00677303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39D0251D19E6658F00677303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39D0251F19E6658F00677303 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39D0252219E6658F00677303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		39D0253819E67B7900677303 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E17AA2611A6BBA6F007BA320 /* Serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serial.h; sourceTree = "<group>"; };
+		E17AA2621A6BBA6F007BA320 /* Serial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serial.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39D0251219E6658F00677303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D0253919E67B7900677303 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39D0250C19E6658F00677303 = {
+			isa = PBXGroup;
+			children = (
+				39D0253819E67B7900677303 /* IOKit.framework */,
+				39D0251719E6658F00677303 /* Serialer */,
+				39D0251619E6658F00677303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39D0251619E6658F00677303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39D0251519E6658F00677303 /* Serialer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39D0251719E6658F00677303 /* Serialer */ = {
+			isa = PBXGroup;
+			children = (
+				E17AA2611A6BBA6F007BA320 /* Serial.h */,
+				E17AA2621A6BBA6F007BA320 /* Serial.m */,
+				39D0251C19E6658F00677303 /* AppDelegate.h */,
+				39D0251D19E6658F00677303 /* AppDelegate.m */,
+				39D0251F19E6658F00677303 /* Images.xcassets */,
+				39D0252119E6658F00677303 /* MainMenu.xib */,
+				39D0251819E6658F00677303 /* Supporting Files */,
+			);
+			path = Serialer;
+			sourceTree = "<group>";
+		};
+		39D0251819E6658F00677303 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39D0251919E6658F00677303 /* Info.plist */,
+				39D0251A19E6658F00677303 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39D0251419E6658F00677303 /* Serialer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39D0253219E6659000677303 /* Build configuration list for PBXNativeTarget "Serialer" */;
+			buildPhases = (
+				39D0251119E6658F00677303 /* Sources */,
+				39D0251219E6658F00677303 /* Frameworks */,
+				39D0251319E6658F00677303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Serialer;
+			productName = Serialer;
+			productReference = 39D0251519E6658F00677303 /* Serialer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39D0250D19E6658F00677303 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Server2;
+				TargetAttributes = {
+					39D0251419E6658F00677303 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 39D0251019E6658F00677303 /* Build configuration list for PBXProject "Serialer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39D0250C19E6658F00677303;
+			productRefGroup = 39D0251619E6658F00677303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39D0251419E6658F00677303 /* Serialer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39D0251319E6658F00677303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D0252019E6658F00677303 /* Images.xcassets in Resources */,
+				39D0252319E6659000677303 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39D0251119E6658F00677303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17AA2631A6BBA6F007BA320 /* Serial.m in Sources */,
+				39D0251E19E6658F00677303 /* AppDelegate.m in Sources */,
+				39D0251B19E6658F00677303 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39D0252119E6658F00677303 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39D0252219E6658F00677303 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39D0253019E6659000677303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		39D0253119E6659000677303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		39D0253319E6659000677303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Serialer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gcraud-Nano.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		39D0253419E6659000677303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Serialer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gcraud-Nano.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39D0251019E6658F00677303 /* Build configuration list for PBXProject "Serialer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D0253019E6659000677303 /* Debug */,
+				39D0253119E6659000677303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39D0253219E6659000677303 /* Build configuration list for PBXNativeTarget "Serialer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39D0253319E6659000677303 /* Debug */,
+				39D0253419E6659000677303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39D0250D19E6658F00677303 /* Project object */;
+}
