@@ -104,7 +104,7 @@
         
         @try {
             serial = [[Serial alloc] initWithBSDPath:_portsBox.stringValue];
-            [serial openWithBaud:_baudPopUp.selectedItem.title.integerValue
+            [serial openWithBaud:_baudPopUp.integerValue
                         delegate:self];
             sender.title = @"Stop";
             sender.state = NSOffState;

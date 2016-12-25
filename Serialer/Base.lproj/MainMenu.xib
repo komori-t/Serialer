@@ -15,7 +15,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="baudPopUp" destination="jpr-4d-nTY" id="3Si-BZ-cHE"/>
+                <outlet property="baudPopUp" destination="LKw-4B-dmJ" id="itH-Xi-mnX"/>
                 <outlet property="modePopUp" destination="F2f-o7-TJ9" id="dMF-Re-rgm"/>
                 <outlet property="outputView" destination="BK6-di-buH" id="hQA-xu-nne"/>
                 <outlet property="portsBox" destination="Dwt-cW-7ce" id="LZY-gY-u9Q"/>
@@ -791,44 +791,6 @@
                             <action selector="startOrStop:" target="Voe-Tx-rLC" id="Yym-mM-ire"/>
                         </connections>
                     </button>
-                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jpr-4d-nTY">
-                        <rect key="frame" x="59" y="317" width="181" height="26"/>
-                        <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="ZaR-AU-tib"/>
-                        </constraints>
-                        <popUpButtonCell key="cell" type="push" title="9600" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="p8P-mm-c5m" id="q5L-Sj-14P">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
-                            <menu key="menu" id="Qg2-1m-lPO">
-                                <items>
-                                    <menuItem title="50" id="miu-rX-r6m"/>
-                                    <menuItem title="75" id="aYj-Cq-os4"/>
-                                    <menuItem title="110" id="Ql0-1L-clR"/>
-                                    <menuItem title="134" id="dDq-iw-Suk"/>
-                                    <menuItem title="150" id="fOa-6U-G6m"/>
-                                    <menuItem title="200" id="AQD-HG-y1c"/>
-                                    <menuItem title="300" id="Ykv-c8-x8L"/>
-                                    <menuItem title="600" id="dhD-kW-nLu"/>
-                                    <menuItem title="1200" id="ZrX-pf-sKY"/>
-                                    <menuItem title="1800" id="nXL-RY-rJh"/>
-                                    <menuItem title="2400" id="L1t-7n-U8x"/>
-                                    <menuItem title="4800" id="taU-zS-bhv"/>
-                                    <menuItem title="7200" id="We1-mr-c3u"/>
-                                    <menuItem title="9600" state="on" id="p8P-mm-c5m"/>
-                                    <menuItem title="14400" id="AIq-RY-xjc"/>
-                                    <menuItem title="19200" id="7Gb-P7-JWA"/>
-                                    <menuItem title="28800" id="bHG-zJ-tXb"/>
-                                    <menuItem title="38400" id="CPd-tR-FnH"/>
-                                    <menuItem title="57600" id="bOK-qj-quC"/>
-                                    <menuItem title="76800" id="72X-F1-om8"/>
-                                    <menuItem title="115200" id="UjO-vn-HlU"/>
-                                    <menuItem title="230400" id="OOc-Iv-Mbv"/>
-                                    <menuItem title="460800" id="sxG-c0-8U3"/>
-                                    <menuItem title="921600" id="4Oo-pB-kRR"/>
-                                </items>
-                            </menu>
-                        </popUpButtonCell>
-                    </popUpButton>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F2f-o7-TJ9">
                         <rect key="frame" x="286" y="317" width="177" height="26"/>
                         <constraints>
@@ -887,31 +849,66 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-4B-dmJ">
+                        <rect key="frame" x="61" y="317" width="179" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="9600" drawsBackground="YES" completes="NO" numberOfVisibleItems="24" id="0Uh-5W-40J">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="azs-an-UEZ"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <objectValues>
+                                <string>50</string>
+                                <string>75</string>
+                                <string>110</string>
+                                <string>134</string>
+                                <string>150</string>
+                                <string>200</string>
+                                <string>300</string>
+                                <string>600</string>
+                                <string>1200</string>
+                                <string>1800</string>
+                                <string>2400</string>
+                                <string>4800</string>
+                                <string>7200</string>
+                                <string>9600</string>
+                                <string>14400</string>
+                                <string>19200</string>
+                                <string>28800</string>
+                                <string>38400</string>
+                                <string>57600</string>
+                                <string>76800</string>
+                                <string>115200</string>
+                                <string>230400</string>
+                                <string>460800</string>
+                                <string>921600</string>
+                            </objectValues>
+                        </comboBoxCell>
+                    </comboBox>
                 </subviews>
                 <constraints>
                     <constraint firstItem="FG1-qp-hqB" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="0zR-rQ-aar"/>
                     <constraint firstAttribute="trailing" secondItem="zeG-LD-Hs3" secondAttribute="trailing" constant="20" id="2et-nS-CcH"/>
                     <constraint firstItem="94H-35-p5c" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="4D1-KI-wcW"/>
+                    <constraint firstItem="BK6-di-buH" firstAttribute="top" secondItem="LKw-4B-dmJ" secondAttribute="bottom" constant="10" id="4VH-sY-kRc"/>
                     <constraint firstItem="94H-35-p5c" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="22" id="53L-Hc-Iej"/>
                     <constraint firstItem="fmj-hZ-GZz" firstAttribute="leading" secondItem="70y-u1-KNU" secondAttribute="trailing" constant="12" id="748-lS-Uob"/>
                     <constraint firstAttribute="trailing" secondItem="mvh-E8-2tx" secondAttribute="trailing" constant="20" id="9cc-mV-wYe"/>
-                    <constraint firstItem="jpr-4d-nTY" firstAttribute="top" secondItem="Dwt-cW-7ce" secondAttribute="bottom" constant="9" id="DBE-u0-cuy"/>
                     <constraint firstItem="fmj-hZ-GZz" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" constant="35" id="Goc-FE-HVH"/>
                     <constraint firstAttribute="bottom" secondItem="fmj-hZ-GZz" secondAttribute="bottom" constant="20" id="Gtf-Xe-R4H"/>
                     <constraint firstAttribute="bottom" secondItem="FG1-qp-hqB" secondAttribute="bottom" constant="50" id="HzT-LB-bMa"/>
                     <constraint firstItem="3Mq-hl-UL4" firstAttribute="leading" secondItem="Dwt-cW-7ce" secondAttribute="trailing" constant="8" id="IdG-KG-G0p"/>
-                    <constraint firstItem="jpr-4d-nTY" firstAttribute="leading" secondItem="cJk-k4-Ya5" secondAttribute="trailing" constant="10" id="Nwd-kY-Sdi"/>
                     <constraint firstItem="cJk-k4-Ya5" firstAttribute="top" secondItem="94H-35-p5c" secondAttribute="bottom" constant="11" id="OIM-jZ-C3B"/>
                     <constraint firstItem="zeG-LD-Hs3" firstAttribute="leading" secondItem="6M9-Eb-CUX" secondAttribute="trailing" constant="8" id="TMg-qQ-fL7"/>
+                    <constraint firstItem="LKw-4B-dmJ" firstAttribute="leading" secondItem="cJk-k4-Ya5" secondAttribute="trailing" constant="10" id="Uh1-g2-TWV"/>
                     <constraint firstItem="F2f-o7-TJ9" firstAttribute="top" secondItem="Dwt-cW-7ce" secondAttribute="bottom" constant="9" id="XSa-6u-gAN"/>
                     <constraint firstItem="70y-u1-KNU" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" constant="-36" id="Xde-lP-bR4"/>
                     <constraint firstItem="fmj-hZ-GZz" firstAttribute="top" secondItem="6M9-Eb-CUX" secondAttribute="bottom" constant="8" id="YGl-7M-yxA"/>
-                    <constraint firstItem="mvh-E8-2tx" firstAttribute="top" secondItem="jpr-4d-nTY" secondAttribute="bottom" constant="8" id="cDg-XP-2Ll"/>
-                    <constraint firstItem="48s-UR-wvM" firstAttribute="leading" secondItem="jpr-4d-nTY" secondAttribute="trailing" constant="8" id="en6-un-P7T"/>
                     <constraint firstAttribute="trailing" secondItem="3Mq-hl-UL4" secondAttribute="trailing" constant="20" id="ete-3L-gPc"/>
                     <constraint firstItem="6M9-Eb-CUX" firstAttribute="leading" secondItem="FG1-qp-hqB" secondAttribute="trailing" constant="8" id="f1R-CK-ReO"/>
                     <constraint firstItem="Dwt-cW-7ce" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="fEU-fG-c27"/>
                     <constraint firstItem="Dwt-cW-7ce" firstAttribute="leading" secondItem="94H-35-p5c" secondAttribute="trailing" constant="15" id="gzi-vA-bMZ"/>
+                    <constraint firstItem="48s-UR-wvM" firstAttribute="leading" secondItem="LKw-4B-dmJ" secondAttribute="trailing" constant="8" id="htn-CY-L3d"/>
+                    <constraint firstItem="LKw-4B-dmJ" firstAttribute="top" secondItem="Dwt-cW-7ce" secondAttribute="bottom" constant="9" id="jvA-xk-aT5"/>
                     <constraint firstItem="70y-u1-KNU" firstAttribute="top" secondItem="6M9-Eb-CUX" secondAttribute="bottom" constant="8" id="lVC-PR-Wna"/>
                     <constraint firstItem="48s-UR-wvM" firstAttribute="top" secondItem="Dwt-cW-7ce" secondAttribute="bottom" constant="10" id="mZ3-Ks-bFP"/>
                     <constraint firstItem="cJk-k4-Ya5" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="mnp-pp-jfu"/>

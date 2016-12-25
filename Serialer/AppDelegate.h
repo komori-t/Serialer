@@ -4,7 +4,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate, SerialDelegate>
 
 @property (weak)   IBOutlet NSComboBox    *portsBox;
-@property (weak)   IBOutlet NSPopUpButton *baudPopUp;
+@property (weak)   IBOutlet NSComboBox    *baudPopUp;
 @property (weak)   IBOutlet NSPopUpButton *modePopUp;
 @property (assign) IBOutlet NSTextView    *outputView;
 @property (weak)   IBOutlet NSTextField   *sendTextField;
