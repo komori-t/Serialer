@@ -12,6 +12,7 @@
 		39D0252019E6658F00677303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D0251F19E6658F00677303 /* Images.xcassets */; };
 		39D0252319E6659000677303 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D0252119E6658F00677303 /* MainMenu.xib */; };
 		39D0253919E67B7900677303 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D0253819E67B7900677303 /* IOKit.framework */; };
+		CE9244491E0F94AF0026C011 /* BaudRates.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9244481E0F94AF0026C011 /* BaudRates.txt */; };
 		E17AA2631A6BBA6F007BA320 /* Serial.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AA2621A6BBA6F007BA320 /* Serial.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		39D0251F19E6658F00677303 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39D0252219E6658F00677303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		39D0253819E67B7900677303 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		CE9244481E0F94AF0026C011 /* BaudRates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BaudRates.txt; sourceTree = "<group>"; };
 		E17AA2611A6BBA6F007BA320 /* Serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serial.h; sourceTree = "<group>"; };
 		E17AA2621A6BBA6F007BA320 /* Serial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				39D0251F19E6658F00677303 /* Images.xcassets */,
 				39D0252119E6658F00677303 /* MainMenu.xib */,
 				39D0251819E6658F00677303 /* Supporting Files */,
+				CE9244481E0F94AF0026C011 /* BaudRates.txt */,
 			);
 			path = Serialer;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D0252019E6658F00677303 /* Images.xcassets in Resources */,
+				CE9244491E0F94AF0026C011 /* BaudRates.txt in Resources */,
 				39D0252319E6659000677303 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

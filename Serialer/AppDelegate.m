@@ -1,5 +1,7 @@
 #import "AppDelegate.h"
 
+static NSString *userDefaultsBaudKey = @"SerialerBaudRate";
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -24,12 +26,32 @@
     [[NSNotificationCenter defaultCenter] addObserverForName:NSViewFrameDidChangeNotification
                                                       object:self.scrollView queue:nil usingBlock:block];
     block(nil);
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *baudratesTxt = [NSString stringWithContentsOfFile:[bundle pathForResource:@"BaudRates" ofType:@"txt"]
+                                                       encoding:NSUTF8StringEncoding
+                                                          error:nil];
+    NSArray *baudrates = [baudratesTxt componentsSeparatedByString:@"\n"];
+    [self.baudPopUp addItemsWithObjectValues:baudrates];
+    self.baudPopUp.numberOfVisibleItems = baudrates.count;
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSInteger initialBaud = [userDefaults integerForKey:userDefaultsBaudKey];
+    self.baudPopUp.stringValue = [NSString stringWithFormat:@"%ld", initialBaud];
+    
     [self search:nil];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
     return YES;
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:self.baudPopUp.integerValue forKey:userDefaultsBaudKey];
+    [userDefaults synchronize];
 }
 
 - (IBAction)search:(NSButton *)sender
@@ -94,6 +116,11 @@
 - (IBAction)startOrStop:(NSButton *)sender
 {
     if ([sender.title isEqualToString:@"Start"]) {
+        NSInteger baud = self.baudPopUp.integerValue;
+        if (baud == 0) {
+            return;
+        }
+        
         @synchronized(_outputView) {
             NSTextStorage *textStorage = [_outputView textStorage];
             [textStorage beginEditing];
@@ -104,8 +131,7 @@
         
         @try {
             serial = [[Serial alloc] initWithBSDPath:_portsBox.stringValue];
-            [serial openWithBaud:_baudPopUp.integerValue
-                        delegate:self];
+            [serial openWithBaud:baud delegate:self];
             sender.title = @"Stop";
             sender.state = NSOffState;
             _baudPopUp.hidden = YES;

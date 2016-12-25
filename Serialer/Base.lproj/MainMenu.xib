@@ -851,37 +851,10 @@
                     </textField>
                     <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-4B-dmJ">
                         <rect key="frame" x="61" y="317" width="179" height="26"/>
-                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="9600" drawsBackground="YES" completes="NO" numberOfVisibleItems="24" id="0Uh-5W-40J">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="azs-an-UEZ"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="0Uh-5W-40J">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <objectValues>
-                                <string>50</string>
-                                <string>75</string>
-                                <string>110</string>
-                                <string>134</string>
-                                <string>150</string>
-                                <string>200</string>
-                                <string>300</string>
-                                <string>600</string>
-                                <string>1200</string>
-                                <string>1800</string>
-                                <string>2400</string>
-                                <string>4800</string>
-                                <string>7200</string>
-                                <string>9600</string>
-                                <string>14400</string>
-                                <string>19200</string>
-                                <string>28800</string>
-                                <string>38400</string>
-                                <string>57600</string>
-                                <string>76800</string>
-                                <string>115200</string>
-                                <string>230400</string>
-                                <string>460800</string>
-                                <string>921600</string>
-                            </objectValues>
                         </comboBoxCell>
                     </comboBox>
                 </subviews>
